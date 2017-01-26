@@ -8,7 +8,7 @@
 `2.` *Runtime-error*     
 `3.` *The result is 234*     
     
-[![][code]](LE1.java "code"){:target="_blank"}<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE1.java" title="exec" target="_blank">![][play]</a>
+[![][code]](LE1.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE1.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -36,7 +36,7 @@ public class LE1 {
 <summary><strong markdown="1" title="3">![][key]</strong></summary>
 ![][yes] *The result is 234*<br>A lambda expression occurs in an assignment context (§5.2), an invocation context (§5.3), or a casting context (§5.5).<br><a href="LE1.java" target="_blank" title="code">![][code]</a>
 </details>
-###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27){:target="_blank"}
+###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27)
 ***    
     
 ### Question 2.2
@@ -44,7 +44,7 @@ public class LE1 {
 `2.` *Runtime-error*     
 `3.` *The result is 2*     
     
-[![][code]](LE2.java "code"){:target="_blank"}<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE2.java" title="exec" target="_blank">![][play]</a>
+[![][code]](LE2.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE2.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -73,7 +73,7 @@ context (§5.2), an invocation context (§5.3), or a casting context (§5.5).
     1 error     
 </pre><a href="LE2.java" target="_blank" title="code">![][code]</a>
 </details>
-###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27){:target="_blank"}
+###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27)
 ***    
 ### 15.27.1. Lambda Parameters    
 ***    
@@ -83,7 +83,7 @@ context (§5.2), an invocation context (§5.3), or a casting context (§5.5).
 `2.` *Runtime-error*     
 `3.` *The result is 1*     
     
-[![][code]](LE10.java "code"){:target="_blank"}<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE10.java" title="exec" target="_blank">![][play]</a>
+[![][code]](LE10.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE10.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -104,7 +104,7 @@ public class LE10 {
 <summary><strong markdown="1" title="1">![][key]</strong></summary>
 ![][yes] *Compile-error*<br>It is a compile-time error if a lambda parameter has the name _ (that is, a single underscore character).<br><a href="LE10.java" target="_blank" title="code">![][code]</a>
 </details>
-###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1){:target="_blank"}
+###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1)
 ***    
     
 ### Question 4.4
@@ -112,7 +112,7 @@ public class LE10 {
 `2.` *Runtime-error*     
 `3.` *Successfully*     
     
-[![][code]](LE11.java "code"){:target="_blank"}<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE11.java" title="exec" target="_blank">![][play]</a>
+[![][code]](LE11.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE11.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -153,7 +153,7 @@ type correctness of code in the body all depend on the parameters' inferred type
 implies that inference of parameter types must occur "before" attempting to type-check the     
 body of the lambda expression.<br><a href="LE11.java" target="_blank" title="code">![][code]</a>
 </details>
-###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1){:target="_blank"}
+###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1)
 ***    
     
 ### Question 5.5
@@ -161,7 +161,7 @@ body of the lambda expression.<br><a href="LE11.java" target="_blank" title="cod
 `2.` *Runtime-error*     
 `3.` *Successfully*     
     
-[![][code]](LE12.java "code"){:target="_blank"}<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE12.java" title="exec" target="_blank">![][play]</a>
+[![][code]](LE12.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE12.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -217,7 +217,7 @@ This is because:
 • Overload resolution has to be completed before the arguments' target types will be known     
 </pre><a href="LE12.java" target="_blank" title="code">![][code]</a>
 </details>
-###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1){:target="_blank"}, [15.12.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.12.2){:target="_blank"}
+###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1), [15.12.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.12.2)
 ***    
 ### 15.27.2. Lambda Body    
 ***    
@@ -228,7 +228,7 @@ This is because:
 `3.` *Output: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100*     
 `4.` *Output: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;200*     
     
-[![][code]](LE13.java "code"){:target="_blank"}<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE13.java" title="exec" target="_blank">![][play]</a>
+[![][code]](LE13.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE13.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -260,7 +260,7 @@ public class LE13 {
 <summary><strong markdown="1" title="4">![][key]</strong></summary>
 ![][yes] *Output: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;200*<br>Unlike code appearing in anonymous class declarations, the meaning of names and the this and super keywords appearing in a lambda body, along with the accessibility of referenced declarations, are the same as in the surrounding context (except that lambda parameters introduce new names).<br><a href="LE13.java" target="_blank" title="code">![][code]</a>
 </details>
-###### *see*: [15.27.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.2){:target="_blank"}
+###### *see*: [15.27.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.2)
 ***    
     
 ### Question 7.7
@@ -268,7 +268,7 @@ public class LE13 {
 `2.` *Runtime-error*     
 `3.` *Output: done*     
     
-[![][code]](LE14.java "code"){:target="_blank"}<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE14.java" title="exec" target="_blank">![][play]</a>
+[![][code]](LE14.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE14.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -294,7 +294,7 @@ public class LE14 {
 <summary><strong markdown="1" title="1">![][key]</strong></summary>
 ![][yes] *Compile-error*<br>It is a compile-time error if a block lambda body is neither void-compatible nor value-compatible.<br><a href="LE14.java" target="_blank" title="code">![][code]</a>
 </details>
-###### *see*: [15.27.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.2){:target="_blank"}
+###### *see*: [15.27.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.2)
 ***    
     
 ### Question 8.8
@@ -302,7 +302,7 @@ public class LE14 {
 `2.` *Runtime-error*     
 `3.` *Output: 30*     
     
-[![][code]](LE15.java "code"){:target="_blank"}<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE15.java" title="exec" target="_blank">![][play]</a>
+[![][code]](LE15.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE15.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -332,7 +332,7 @@ public class LE15 {
 <summary><strong markdown="1" title="1">![][key]</strong></summary>
 ![][yes] *Compile-error*<br>Any local variable, formal parameter, or exception parameter used but not declared in a lambda expression must either be declared final or be effectively final (§4.12.4), or a compile-time error occurs where the use is attempted.<br><a href="LE15.java" target="_blank" title="code">![][code]</a>
 </details>
-###### *see*: [15.27.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.2){:target="_blank"}
+###### *see*: [15.27.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.2)
 ***    
     
 ### Question 9.9
@@ -340,7 +340,7 @@ public class LE15 {
 `2.` *Runtime-error*     
 `3.` *Output: 10*     
     
-[![][code]](LE16.java "code"){:target="_blank"}<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE16.java" title="exec" target="_blank">![][play]</a>
+[![][code]](LE16.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE16.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -368,7 +368,7 @@ public class LE16 {
 <summary><strong markdown="1" title="1">![][key]</strong></summary>
 ![][yes] *Compile-error*<br>Any local variable used but not declared in a lambda body must be definitely assigned (§16 (Definite Assignment)) before the lambda body, or a compile-time error occurs.<br><a href="LE16.java" target="_blank" title="code">![][code]</a>
 </details>
-###### *see*: [15.27.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.2){:target="_blank"}
+###### *see*: [15.27.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.2)
 ***    
 ### 15.27.3. Type of a Lambda Expression    
 ***    
@@ -378,7 +378,7 @@ public class LE16 {
 `2.` *Runtime-error*     
 `3.` *Output: 5*     
     
-[![][code]](LE17.java "code"){:target="_blank"}<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE17.java" title="exec" target="_blank">![][play]</a>
+[![][code]](LE17.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE17.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -408,7 +408,7 @@ public class LE17 {
 <summary><strong markdown="1" title="1">![][key]</strong></summary>
 ![][yes] *Compile-error*<br>If T is a wildcard-parameterized functional interface type and the lambda expression is implicitly typed, then the ground target type is the non-wildcard parameterization (§9.9) of T.<br><a href="LE17.java" target="_blank" title="code">![][code]</a>
 </details>
-###### *see*: [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3){:target="_blank"}
+###### *see*: [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3)
 ***    
     
 ### Question 11.11
@@ -416,7 +416,7 @@ public class LE17 {
 `2.` *Runtime-error*     
 `3.` *Output: 5*     
     
-[![][code]](LE18.java "code"){:target="_blank"}<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE18.java" title="exec" target="_blank">![][play]</a>
+[![][code]](LE18.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE18.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -452,7 +452,7 @@ public class LE18 {
 ![][yes] *Output: 5*<br>If T is a wildcard-parameterized functional interface type and the lambda expression is implicitly typed,     
 then the ground target type is the non-wildcard parameterization (§9.9) of T.<br><a href="LE18.java" target="_blank" title="code">![][code]</a>
 </details>
-###### *see*: [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3){:target="_blank"}
+###### *see*: [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3)
 ***    
 
 [![][back]](../README.md#lmb)
