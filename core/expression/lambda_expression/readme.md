@@ -8,7 +8,8 @@
 `2.` *Runtime-error*     
 `3.` *The result is 234*     
     
-[![][code]](LE1.java "code")```java
+[![][code]](LE1.java "code")
+```java
 package lambda_expression;
 
 public class LE1 {
@@ -43,7 +44,8 @@ public class LE1 {
 `2.` *Runtime-error*     
 `3.` *The result is 2*     
     
-[![][code]](LE2.java "code")```java
+[![][code]](LE2.java "code")
+```java
 package lambda_expression;
 
 public class LE2 {
@@ -81,7 +83,8 @@ context (§5.2), an invocation context (§5.3), or a casting context (§5.5).
 `2.` *Runtime-error*     
 `3.` *The result is 1*     
     
-[![][code]](LE10.java "code")```java
+[![][code]](LE10.java "code")
+```java
 package lambda_expression;
 
 public class LE10 {
@@ -109,7 +112,8 @@ public class LE10 {
 `2.` *Runtime-error*     
 `3.` *Successfully*     
     
-[![][code]](LE11.java "code")```java
+[![][code]](LE11.java "code")
+```java
 package lambda_expression;
 
 public class LE11 {
@@ -157,7 +161,8 @@ body of the lambda expression.<br><a href="LE11.java" target="_blank" title="cod
 `2.` *Runtime-error*     
 `3.` *Successfully*     
     
-[![][code]](LE12.java "code")```java
+[![][code]](LE12.java "code")
+```java
 package lambda_expression;
 
 public class LE12 {
@@ -223,7 +228,8 @@ This is because:
 `3.` *Output: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100*     
 `4.` *Output: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;200*     
     
-[![][code]](LE13.java "code")```java
+[![][code]](LE13.java "code")
+```java
 package lambda_expression;
 
 public class LE13 {
@@ -262,7 +268,8 @@ public class LE13 {
 `2.` *Runtime-error*     
 `3.` *Output: done*     
     
-[![][code]](LE14.java "code")```java
+[![][code]](LE14.java "code")
+```java
 package lambda_expression;
 
 public class LE14 {
@@ -295,7 +302,8 @@ public class LE14 {
 `2.` *Runtime-error*     
 `3.` *Output: 30*     
     
-[![][code]](LE15.java "code")```java
+[![][code]](LE15.java "code")
+```java
 package lambda_expression;
 
 public class LE15 {
@@ -332,7 +340,8 @@ public class LE15 {
 `2.` *Runtime-error*     
 `3.` *Output: 10*     
     
-[![][code]](LE16.java "code")```java
+[![][code]](LE16.java "code")
+```java
 package lambda_expression;
 
 public class LE16 {
@@ -369,7 +378,8 @@ public class LE16 {
 `2.` *Runtime-error*     
 `3.` *Output: 5*     
     
-[![][code]](LE17.java "code")```java
+[![][code]](LE17.java "code")
+```java
 package lambda_expression;
 
 import java.util.ArrayList;
@@ -406,7 +416,8 @@ public class LE17 {
 `2.` *Runtime-error*     
 `3.` *Output: 5*     
     
-[![][code]](LE18.java "code")```java
+[![][code]](LE18.java "code")
+```java
 package lambda_expression;
 
 import java.util.ArrayList;
