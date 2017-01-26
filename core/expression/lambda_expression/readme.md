@@ -4,9 +4,10 @@
 ***    
     
 ### Question 1.1
-`1.` *Compile-error*     
-`2.` *Runtime-error*     
-`3.` *The result is 234*     
+#### *What is result?*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *The result is 234*     
     
 [![][code]](LE1.java "code")
 ```java
