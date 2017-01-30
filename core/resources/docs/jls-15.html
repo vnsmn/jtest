@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<!-- saved from url=(0060)http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html -->
+<!-- saved from url=(0098)file:///home/vns/workspace/projects/portfolio/bitbucket/java/jtest/resources_core/docs/jls-15.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       
    
@@ -4217,8 +4217,7 @@ class Test {
                         and the maintainer of the <code class="literal">points</code> package decided,
                         after due deliberation, to correct it by adding a method to
                         class <code class="literal">ColoredPoint</code>:
-                     </p><pre class="programlisting">
-public void adopt(ColoredPoint p) {
+                     </p><pre class="programlisting">public void adopt(ColoredPoint p) {
     adopt((Point)p);
     color = p.color;
 }
@@ -4243,8 +4242,7 @@ public void adopt(ColoredPoint p) {
                         compiled and old code, by adding defensive code to the
                         old <code class="literal">adopt</code> method for the sake of old code that
                         still invokes it on <code class="literal">ColoredPoint</code> arguments:
-                     </p><pre class="programlisting">
-public void adopt(Point p) {
+                     </p><pre class="programlisting">public void adopt(Point p) {
     if (p instanceof ColoredPoint)
         color = ((ColoredPoint)p).color;
     x = p.x; y = p.y;
@@ -7054,8 +7052,7 @@ Runnable r = t::invoke;
                   need to be able to declare type parameters, and no syntax supports
                   this; while for a method reference, no such declaration is
                   necessary. For example, the following program is legal:
-               </p><pre class="programlisting">
-interface ListFactory {
+               </p><pre class="programlisting">interface ListFactory {
     &lt;T&gt; List&lt;T&gt; make();
 }
 
@@ -9285,8 +9282,7 @@ class Test {
                         class <code class="literal">Point</code> were a subclass
                         of <code class="literal">Element</code> (an admittedly strange notion in this
                         example):
-                     </p><pre class="programlisting">
-class Point extends Element { int x, y; }
+                     </p><pre class="programlisting">class Point extends Element { int x, y; }
 
 </pre><p class="note">then the cast would be possible, though it would
                         require a run-time check, and the <code class="literal">instanceof</code> expression would then
@@ -11233,8 +11229,7 @@ class Point extends Element { int x, y; }
                   expression is a poly expression, and each operand is considered to be
                   in an assignment context targeting <code class="literal">Class<code class="literal">&lt;</code>? super
                      Integer<code class="literal">&gt;</code></code>:
-               </p><pre class="programlisting">
-Class&lt;? super Integer&gt; choose(boolean b,
+               </p><pre class="programlisting">Class&lt;? super Integer&gt; choose(boolean b,
                               Class&lt;Integer&gt; c1,
                               Class&lt;Number&gt; c2) {
     return b ? c1 : c2;
@@ -12131,13 +12126,13 @@ a[0] = a[0] + (a[0] = 4) * (a[0] + 2);
             <p class="norm-static"><a name="jls-15.27-200"></a>Lambda
                expressions are always poly expressions (<a class="xref" href="http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.2" title="15.2. Forms of Expressions">§15.2</a>).
             </p>
-            <p class="norm-error"><a name="jls-15.27-210"></a>It is a
+            <p class="norm-error"><span style="display:inline;color:rgb(0,0,255);background-color:rgb(255,255,155);"><sup style="display:inline"><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE1.java"title="LE1.java">[1]</a></sup><a name="le1"></a><a name="jls-15.27-210"></a>It is a
                compile-time error if a lambda expression occurs in a program in
                someplace other than an assignment context
                (<a class="xref" href="http://docs.oracle.com/javase/specs/jls/se8/html/jls-5.html#jls-5.2" title="5.2. Assignment Contexts">§5.2</a>), an invocation context
                (<a class="xref" href="http://docs.oracle.com/javase/specs/jls/se8/html/jls-5.html#jls-5.3" title="5.3. Invocation Contexts">§5.3</a>), or a casting context
                (<a class="xref" href="http://docs.oracle.com/javase/specs/jls/se8/html/jls-5.html#jls-5.5" title="5.5. Casting Contexts">§5.5</a>).
-            </p>
+            </span></p>
             <p class="norm-dynamic"><a name="jls-15.27-300"></a>
                Evaluation of a lambda expression produces an instance of a functional
                interface (<a class="xref" href="http://docs.oracle.com/javase/specs/jls/se8/html/jls-9.html#jls-9.8" title="9.8. Functional Interfaces">§9.8</a>).  Lambda expression evaluation
@@ -12146,8 +12141,7 @@ a[0] = a[0] + (a[0] = 4) * (a[0] + 2);
                method of the functional interface is invoked.
             </p>
             <div class="informalexample">
-               <p class="note">Here are some examples of lambda expressions:</p><pre class="programlisting">
-() -&gt; {}                // No parameters; result is void
+               <p class="note">Here are some examples of lambda expressions:</p><pre class="programlisting">() -&gt; {}                // No parameters; result is void
 () -&gt; 42                // No parameters, expression body
 () -&gt; null              // No parameters, expression body
 () -&gt; { return 42; }    // No parameters, block body with return
@@ -12639,8 +12633,7 @@ t -&gt; { t.start(); }           // Single inferred-type parameter
                <div class="informalexample">
                   <p class="note">The following lambda bodies demonstrate use of
                      effectively final variables.
-                  </p><pre class="programlisting">
-void m1(int x) {
+                  </p><pre class="programlisting">void m1(int x) {
     int y = 1;
     foo(() -&gt; x+y);
     // Legal: x and y are both effectively final.
@@ -12667,8 +12660,7 @@ void m4(int x) {
     // Legal: x and y are both effectively final.
 }
 
-</pre><pre class="programlisting">
-void m5(int x) {
+</pre><pre class="programlisting">void m5(int x) {
     int y;
     if (...) y = 1;
     y = 2;
