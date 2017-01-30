@@ -42,7 +42,7 @@ public class LE1 {
 <pre>
 
 234</pre></details>
-###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/core/jls-15.html#le1)
+###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le1)
 ***    
 <a name="LE2.java"></a>    
 ### Question 2.2
