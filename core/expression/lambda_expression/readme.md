@@ -9,7 +9,7 @@
 > `2.` *Runtime-error*     
 > `3.` *Output: 234*     
     
-[![][code]](LE1.java "code")
+[![][code]](LE1.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE1.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -51,7 +51,7 @@ public class LE1 {
 > `2.` *Runtime-error*     
 > `3.` *Output: 2*     
     
-[![][code]](LE2.java "code")
+[![][code]](LE2.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE2.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -97,7 +97,7 @@ LE2.java:28: error: not a statement
 > `2.` *Runtime-error*     
 > `3.` *Output: 1*     
     
-[![][code]](LE3.java "code")
+[![][code]](LE3.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE3.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -155,7 +155,7 @@ LE3.java:21: error: ';' expected
 > `3.` *Runtime-error*     
 > `4.` *Output: 2*     
     
-[![][code]](LE4.java "code")
+[![][code]](LE4.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE4.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -197,7 +197,7 @@ LE4.java:24: error: illegal start of type
 `2.` *Runtime-error*     
 `3.` *The result is 1*     
     
-[![][code]](LE10.java "code")
+[![][code]](LE10.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE10.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -240,7 +240,7 @@ LE10.java:18: warning: '_' used as an identifier
 `2.` *Runtime-error*     
 `3.` *Successfully*     
     
-[![][code]](LE11.java "code")
+[![][code]](LE11.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE11.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -297,7 +297,7 @@ LE11.java:23: error: unreported exception Exception; must be caught or declared 
 `2.` *Runtime-error*     
 `3.` *Successfully*     
     
-[![][code]](LE12.java "code")
+[![][code]](LE12.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE12.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -372,7 +372,7 @@ LE12.java:31: error: reference to m2 is ambiguous
 `4.` *Runtime-error*     
 `5.` *Output: 000*     
     
-[![][code]](LE19.java "code")
+[![][code]](LE19.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE19.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -425,7 +425,7 @@ LE19.java:27: error: legacy array notation not allowed on variable-arity paramet
 > `2.` *Runtime-error*     
 > `3.` *Output: 2.0*     
     
-[![][code]](LE5.java "code")
+[![][code]](LE5.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE5.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -462,7 +462,7 @@ LE5.java:21: error: &lt;identifier&gt; expected
 `2.` *Runtime-error*     
 `3.` *Output: 2.0*     
     
-[![][code]](LE6.java "code")
+[![][code]](LE6.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE6.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -501,7 +501,7 @@ LE6.java:18: error: &lt;identifier&gt; expected
 `2.` *Runtime-error*     
 `3.` *Output: 0*     
     
-[![][code]](LE7.java "code")
+[![][code]](LE7.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE7.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -549,7 +549,7 @@ LE7.java:18: error: not a statement
 `2.` *Runtime-error*     
 `3.` *Output: 1*     
     
-[![][code]](LE8.java "code")
+[![][code]](LE8.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE8.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -605,7 +605,7 @@ LE8.java:23: error: not a statement
 `2.` *Runtime-error*     
 `3.` *Output: 2*     
     
-[![][code]](LE9.java "code")
+[![][code]](LE9.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE9.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -646,7 +646,7 @@ LE9.java:19: error: variable x is already defined in method main(String[])
 `3.` *Output: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100*     
 `4.` *Output: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;200*     
     
-[![][code]](LE13.java "code")
+[![][code]](LE13.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE13.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -693,7 +693,7 @@ public class LE13 {
 `2.` *Runtime-error*     
 `3.` *Output: done*     
     
-[![][code]](LE14.java "code")
+[![][code]](LE14.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE14.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -742,7 +742,7 @@ LE14.java:20: error: method m1 in class LE14 cannot be applied to given types;
 `2.` *Runtime-error*     
 `3.` *Output: 30*     
     
-[![][code]](LE15.java "code")
+[![][code]](LE15.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE15.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -788,7 +788,7 @@ LE15.java:23: error: local variables referenced from a lambda expression must be
 `2.` *Runtime-error*     
 `3.` *Output: 10*     
     
-[![][code]](LE16.java "code")
+[![][code]](LE16.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE16.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -834,7 +834,7 @@ LE16.java:21: error: variable y might not have been initialized
 `2.` *Runtime-error*     
 `3.` *Output: 5*     
     
-[![][code]](LE17.java "code")
+[![][code]](LE17.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE17.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -880,7 +880,7 @@ LE17.java:24: error: incompatible types: List&lt;Object&gt; cannot be converted 
 `2.` *Runtime-error*     
 `3.` *Output: 5*     
     
-[![][code]](LE18.java "code")
+[![][code]](LE18.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE18.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
@@ -946,7 +946,7 @@ LE18.java:33: warning: [unchecked] unchecked conversion
 `3.` *Output: 12*     
 `4.` *Output: 21*     
     
-[![][code]](LE20.java "code")
+[![][code]](LE20.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE20.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
 
