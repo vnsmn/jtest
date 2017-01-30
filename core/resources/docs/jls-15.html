@@ -12126,7 +12126,7 @@ a[0] = a[0] + (a[0] = 4) * (a[0] + 2);
             <p class="norm-static"><a name="jls-15.27-200"></a>Lambda
                expressions are always poly expressions (<a class="xref" href="http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.2" title="15.2. Forms of Expressions">§15.2</a>).
             </p>
-            <p class="norm-error"><span style="display:inline;color:rgb(0,0,255);background-color:rgb(255,255,155);"><sup style="display:inline"><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE1.java"title="LE1.java">[1]</a><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE20.java"title="LE20.java">[2]</a></sup><a name="le1"></a><a name="jls-15.27-210"></a>It is a
+            <p class="norm-error"><span style="display:inline;color:rgb(0,0,255);background-color:rgb(255,255,155);"><sup style="display:inline"><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE1.java"title="LE1.java">[1]</a><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE2.java"title="LE2.java">[2]</a></sup><a name="le1"></a><a name="jls-15.27-210"></a>It is a
                compile-time error if a lambda expression occurs in a program in
                someplace other than an assignment context
                (<a class="xref" href="http://docs.oracle.com/javase/specs/jls/se8/html/jls-5.html#jls-5.2" title="5.2. Assignment Contexts">§5.2</a>), an invocation context
@@ -12210,11 +12210,11 @@ t -&gt; { t.start(); }           // Single inferred-type parameter
                between argument lists and casts: <code class="literal">(x) <code class="literal">-&gt;</code>
                   ...</code>.
             </p>
-            <p class="note">Lambda expressions cannot declare type parameters.
+            <p class="note"><span style="display:inline;color:rgb(0,0,255);background-color:rgb(255,255,155);"><sup style="display:inline"><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE3.java"title="LE3.java">[1]</a></sup><a name="le3"></a>Lambda expressions cannot declare type parameters.
                While it would make sense semantically to do so, the natural syntax
                (preceding the parameter list with a type parameter list) introduces
                messy ambiguities. For example, consider:
-            </p><pre class="screen">foo( (x) &lt; y , z &gt; (w) <code class="literal">-&gt;</code> v )</pre><p class="note">This could be an invocation
+            </span></p><pre class="screen">foo( (x) &lt; y , z &gt; (w) <code class="literal">-&gt;</code> v )</pre><p class="note">This could be an invocation
                of <code class="literal">foo</code> with one argument (a generic lambda cast to
                type <code class="literal">x</code>), or it could be an invocation
                of <code class="literal">foo</code> with two arguments, both the results of
@@ -12223,12 +12223,12 @@ t -&gt; { t.start(); }           // Single inferred-type parameter
                an operand to the relational operator <code class="literal">&gt;</code>, but that is a
                tenuous assumption on which to build the grammar.)
             </p>
-            <p class="note">There is a precedent for ambiguity resolution
+            <p class="note"><span style="display:inline;color:rgb(0,0,255);background-color:rgb(255,255,155);"><sup style="display:inline"><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE4.java"title="LE4.java">[1]</a></sup><a name="le4"></a>There is a precedent for ambiguity resolution
                involving casts, which essentially prohibits the use of <code class="literal">-</code> and
                <code class="literal">+</code> following a non-primitive cast (<a class="xref" href="http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.15" title="15.15. Unary Operators">§15.15</a>),
                but to extend that approach to generic lambdas would involve invasive
                changes to the grammar.
-            </p>
+            </span></p>
             <div class="section" title="15.27.1. Lambda Parameters">
                <div class="titlepage">
                   <div>
@@ -12238,13 +12238,13 @@ t -&gt; { t.start(); }           // Single inferred-type parameter
                      </div>
                   </div>
                </div>
-               <p class="norm-static"><a name="jls-15.27.1-100"></a>
+               <p class="norm-static"><span style="display:inline;color:rgb(0,0,255);background-color:rgb(255,255,155);"><sup style="display:inline"><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE5.java"title="LE5.java">[1]</a></sup><a name="le5"></a><a name="jls-15.27.1-100"></a>
                   The formal parameters of a lambda expression may have either declared
                   types or inferred types. These styles cannot be mixed: it is not
                   possible for a lambda expression to declare the types of some of its
                   parameters but leave others to be inferred. Only parameters with
                   declared types can have modifiers.
-               </p>
+               </span></p>
                <div id="jls-15.27.1-110" class="productionset"><a name="jls-15.27.1-110"></a>
                     
                   <div class="production"><a name="jls-LambdaParameters"></a>

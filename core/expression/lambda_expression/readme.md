@@ -4,7 +4,7 @@
 ***    
 <a name="LE1.java"></a>    
 ### Question 1.1
-#### *Choose the correct answer?*
+#### *Choose the correct answer:*
 > `1.` *Compile-error*     
 > `2.` *Runtime-error*     
 > `3.` *Output: 234*     
@@ -46,9 +46,10 @@ public class LE1 {
 ***    
 <a name="LE2.java"></a>    
 ### Question 2.2
-`1.` *Compile-error*     
-`2.` *Runtime-error*     
-`3.` *Output: 2*     
+#### *Choose the correct answer:*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *Output: 2*     
     
 [![][code]](LE2.java "code")
 ```java
@@ -82,18 +83,19 @@ context (§5.2), an invocation context (§5.3), or a casting context (§5.5).
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-LE2.java:26: error: not a statement
+LE2.java:28: error: not a statement
         (i1) -&gt; i1 + i;
         ^
 1 error
 </pre></details>
-###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27)
+###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le1)
 ***    
 <a name="LE3.java"></a>    
 ### Question 3.3
-`1.` *Compile-error*     
-`2.` *Runtime-error*     
-`3.` *Output: 1*     
+#### *Choose the correct answer:*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *Output: 1*     
     
 [![][code]](LE3.java "code")
 ```java
@@ -123,33 +125,35 @@ public class LE3 {
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-LE3.java:19: error: illegal start of expression
+LE3.java:21: error: illegal start of expression
         foo((FI&lt;Integer, Integer&gt;) &lt; Integer, Integer &gt; (w) -&gt; w);
                                                         ^
-LE3.java:19: error: ';' expected
+LE3.java:21: error: ';' expected
         foo((FI&lt;Integer, Integer&gt;) &lt; Integer, Integer &gt; (w) -&gt; w);
                                                          ^
-LE3.java:19: error: illegal start of expression
+LE3.java:21: error: illegal start of expression
         foo((FI&lt;Integer, Integer&gt;) &lt; Integer, Integer &gt; (w) -&gt; w);
                                                           ^
-LE3.java:19: error: ';' expected
+LE3.java:21: error: ';' expected
         foo((FI&lt;Integer, Integer&gt;) &lt; Integer, Integer &gt; (w) -&gt; w);
                                                            ^
-LE3.java:19: error: not a statement
+LE3.java:21: error: not a statement
         foo((FI&lt;Integer, Integer&gt;) &lt; Integer, Integer &gt; (w) -&gt; w);
                                                                ^
-LE3.java:19: error: ';' expected
+LE3.java:21: error: ';' expected
         foo((FI&lt;Integer, Integer&gt;) &lt; Integer, Integer &gt; (w) -&gt; w);
                                                                 ^
 6 errors
 </pre></details>
-###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27)
+###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le3)
 ***    
 <a name="LE4.java"></a>    
 ### Question 4.4
-`1.` *Compile-error*     
-`2.` *Runtime-error*     
-`3.` *Output: 1*     
+#### *Choose the correct answer:*
+> `1.` *Compile-error in 1*     
+> `2.` *Compile-error in 2*     
+> `3.` *Runtime-error*     
+> `4.` *Output: 2*     
     
 [![][code]](LE4.java "code")
 ```java
@@ -166,67 +170,29 @@ public class LE4 {
 
 ```
 <details markdown="1">
-<summary><strong markdown="1" title="1">![][key]</strong></summary>
-![][yes] *Compile-error*<br>Compile-error in 2.     
-There is a precedent for ambiguity resolution involving casts, which essentially prohibits the use of - and + following a non-primitive cast (§15.15),     
+<summary><strong markdown="1" title="2">![][key]</strong></summary>
+![][yes] *Compile-error in 2*<br>There is a precedent for ambiguity resolution involving casts, which essentially prohibits the use of - and + following a non-primitive cast (§15.15),     
 but to extend that approach to generic lambdas would involve invasive changes to the grammar.<br><a href="LE4.java" target="_blank" title="code">![][code]</a>
 </details>
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-LE4.java:22: error: cannot find symbol
+LE4.java:24: error: cannot find symbol
         Integer i2 = (Integer) +d; //2
                       ^
   symbol:   variable Integer
   location: class LE4
-LE4.java:22: error: illegal start of type
+LE4.java:24: error: illegal start of type
         Integer i2 = (Integer) +d; //2
                      ^
 2 errors
 </pre></details>
-###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27)
-***    
-<a name="LE5.java"></a>    
-### Question 5.5
-`1.` *Compile-error*     
-`2.` *Runtime-error*     
-`3.` *Output: 2.0*     
-    
-[![][code]](LE5.java "code")
-```java
-package lambda_expression;
-
-public class LE5 {
-    public static void main(String[] args) {
-        FI f = (x, Double y) -> x + y;
-        System.out.println(f.get(1, 1.0));
-    }
-    
-    interface FI {
-        Double get(Integer i, Double d);
-    }
-}
-
-```
-<details markdown="1">
-<summary><strong markdown="1" title="1">![][key]</strong></summary>
-![][yes] *Compile-error*<br>The formal parameters of a lambda expression may have either declared types or inferred types.          
-These styles cannot be mixed: it is not possible for a lambda expression to declare the types of some of its parameters but leave others to be inferred.<br><a href="LE5.java" target="_blank" title="code">![][code]</a>
-</details>
-<details markdown="1">
-<summary><strong markdown="1" title="compile result">![][result]</strong></summary>
-<pre>
-LE5.java:19: error: &lt;identifier&gt; expected
-        FI f = (x, Double y) -&gt; x + y;
-                 ^
-1 error
-</pre></details>
-###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27)
+###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le4)
 ***    
 ### 15.27.1. Lambda Parameters    
 ***    
 <a name="LE10.java"></a>    
-### Question 6.6
+### Question 5.5
 `1.` *Compile-error*     
 `2.` *Runtime-error*     
 `3.` *The result is 1*     
@@ -269,7 +235,7 @@ LE10.java:18: warning: '_' used as an identifier
 ###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1)
 ***    
 <a name="LE11.java"></a>    
-### Question 7.7
+### Question 6.6
 `1.` *Compile-error*     
 `2.` *Runtime-error*     
 `3.` *Successfully*     
@@ -326,7 +292,7 @@ LE11.java:23: error: unreported exception Exception; must be caught or declared 
 ###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1)
 ***    
 <a name="LE12.java"></a>    
-### Question 8.8
+### Question 7.7
 `1.` *Compile-error*     
 `2.` *Runtime-error*     
 `3.` *Successfully*     
@@ -399,7 +365,7 @@ LE12.java:31: error: reference to m2 is ambiguous
 ###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1), [15.12.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.12.2)
 ***    
 <a name="LE19.java"></a>    
-### Question 9.9
+### Question 8.8
 `1.` *Compile-error in 1*     
 `2.` *Compile-error in 2*     
 `3.` *Compile-error in 3*     
@@ -451,6 +417,44 @@ LE19.java:27: error: legacy array notation not allowed on variable-arity paramet
 1 error
 </pre></details>
 ###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1)
+***    
+<a name="LE5.java"></a>    
+### Question 9.9
+#### *Choose the correct answer:*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *Output: 2.0*     
+    
+[![][code]](LE5.java "code")
+```java
+package lambda_expression;
+
+public class LE5 {
+    public static void main(String[] args) {
+        FI f = (x, Double y) -> x + y;
+        System.out.println(f.get(1, 1.0));
+    }
+    
+    interface FI {
+        Double get(Integer i, Double d);
+    }
+}
+
+```
+<details markdown="1">
+<summary><strong markdown="1" title="1">![][key]</strong></summary>
+![][yes] *Compile-error*<br>The formal parameters of a lambda expression may have either declared types or inferred types.          
+These styles cannot be mixed: it is not possible for a lambda expression to declare the types of some of its parameters but leave others to be inferred.<br><a href="LE5.java" target="_blank" title="code">![][code]</a>
+</details>
+<details markdown="1">
+<summary><strong markdown="1" title="compile result">![][result]</strong></summary>
+<pre>
+LE5.java:21: error: &lt;identifier&gt; expected
+        FI f = (x, Double y) -&gt; x + y;
+                 ^
+1 error
+</pre></details>
+###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le5)
 ***    
 <a name="LE6.java"></a>    
 ### Question 10.10
@@ -982,7 +986,7 @@ a method signature that avoids boxing or unboxing the lambda result is preferred
 <pre>
 
 21</pre></details>
-###### *see*: [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le1)
+###### *see*: [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3)
 ***    
 
 [![][back]](../README.md#lmb)
