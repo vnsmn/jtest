@@ -982,7 +982,7 @@ a method signature that avoids boxing or unboxing the lambda result is preferred
 <pre>
 
 21</pre></details>
-###### *see*: [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/Chapter 15. Expressions.html#le1)
+###### *see*: [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le1)
 ***    
 
 [![][back]](../README.md#lmb)
