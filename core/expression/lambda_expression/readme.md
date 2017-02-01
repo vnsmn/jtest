@@ -1151,9 +1151,9 @@ LE23.java:10: error: incompatible types: T is not a functional interface
 ###### *see*: [see LE20](#LE20.java), [see LE12](#LE12.java), [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le20), [2](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le11), [3](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le12)
 ***    
 
-### [![][cerr] see error](/home/vns/workspace/projects/portfolio/github/java/jtest/core/expression/lambda_expression/error.md)
+### [![][cerr] see error](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/error.md)
 -----        
-### [![][cerr] see answer](/home/vns/workspace/projects/portfolio/github/java/jtest/core/expression/lambda_expression/answer.md)
+### [![][cerr] see answer](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/answer.md)
 -----        
 [![][back]](../README.md#lmb)
 
