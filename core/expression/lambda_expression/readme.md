@@ -1153,7 +1153,7 @@ LE23.java:10: error: incompatible types: T is not a functional interface
 
 ### [![][cerr] see error](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/error.md)
 -----        
-### [![][cerr] see answer](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/answer.md)
+### [![][key] see answer](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/answer.md)
 -----        
 [![][back]](../README.md#lmb)
 
