@@ -83,7 +83,7 @@ context (§5.2), an invocation context (§5.3), or a casting context (§5.5).
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-LE2.java:28: error: not a statement
+LE2.java:6: error: not a statement
         (i1) -&gt; i1 + i;
         ^
 1 error
@@ -125,22 +125,22 @@ public class LE3 {
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-LE3.java:21: error: illegal start of expression
+LE3.java:6: error: illegal start of expression
         foo((FI&lt;Integer, Integer&gt;) &lt; Integer, Integer &gt; (w) -&gt; w);
                                                         ^
-LE3.java:21: error: ';' expected
+LE3.java:6: error: ';' expected
         foo((FI&lt;Integer, Integer&gt;) &lt; Integer, Integer &gt; (w) -&gt; w);
                                                          ^
-LE3.java:21: error: illegal start of expression
+LE3.java:6: error: illegal start of expression
         foo((FI&lt;Integer, Integer&gt;) &lt; Integer, Integer &gt; (w) -&gt; w);
                                                           ^
-LE3.java:21: error: ';' expected
+LE3.java:6: error: ';' expected
         foo((FI&lt;Integer, Integer&gt;) &lt; Integer, Integer &gt; (w) -&gt; w);
                                                            ^
-LE3.java:21: error: not a statement
+LE3.java:6: error: not a statement
         foo((FI&lt;Integer, Integer&gt;) &lt; Integer, Integer &gt; (w) -&gt; w);
                                                                ^
-LE3.java:21: error: ';' expected
+LE3.java:6: error: ';' expected
         foo((FI&lt;Integer, Integer&gt;) &lt; Integer, Integer &gt; (w) -&gt; w);
                                                                 ^
 6 errors
@@ -177,12 +177,12 @@ but to extend that approach to generic lambdas would involve invasive changes to
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-LE4.java:24: error: cannot find symbol
+LE4.java:7: error: cannot find symbol
         Integer i2 = (Integer) +d; //2
                       ^
   symbol:   variable Integer
   location: class LE4
-LE4.java:24: error: illegal start of type
+LE4.java:7: error: illegal start of type
         Integer i2 = (Integer) +d; //2
                      ^
 2 errors
@@ -193,9 +193,10 @@ LE4.java:24: error: illegal start of type
 ***    
 <a name="LE10.java"></a>    
 ### Question 5.5
-`1.` *Compile-error*     
-`2.` *Runtime-error*     
-`3.` *The result is 1*     
+#### *Choose the correct answer:*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *The result is 1*     
     
 [![][code]](LE10.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE10.java" title="exec" target="_blank">![][play]</a>
 ```java
@@ -221,24 +222,25 @@ public class LE10 {
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-LE10.java:18: error: '_' used as an identifier
+LE10.java:5: error: '_' used as an identifier
         FI f = (_) -&gt; _;
                 ^
   (use of '_' as an identifier is forbidden for lambda parameters)
-LE10.java:18: warning: '_' used as an identifier
+LE10.java:5: warning: '_' used as an identifier
         FI f = (_) -&gt; _;
                       ^
   (use of '_' as an identifier might not be supported in releases after Java SE 8)
 1 error
 1 warning
 </pre></details>
-###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1)
+###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le10)
 ***    
 <a name="LE11.java"></a>    
 ### Question 6.6
-`1.` *Compile-error*     
-`2.` *Runtime-error*     
-`3.` *Successfully*     
+#### *Choose the correct answer:*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *Successfully*     
     
 [![][code]](LE11.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE11.java" title="exec" target="_blank">![][play]</a>
 ```java
@@ -284,18 +286,19 @@ body of the lambda expression.<br><a href="LE11.java" target="_blank" title="cod
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-LE11.java:23: error: unreported exception Exception; must be caught or declared to be thrown
+LE11.java:5: error: unreported exception Exception; must be caught or declared to be thrown
         FI1 f1 = (x) -&gt; x.m1();
                             ^
 1 error
 </pre></details>
-###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1)
+###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le11)
 ***    
 <a name="LE12.java"></a>    
 ### Question 7.7
-`1.` *Compile-error*     
-`2.` *Runtime-error*     
-`3.` *Successfully*     
+#### *Choose the correct answer:*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *Successfully*     
     
 [![][code]](LE12.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE12.java" title="exec" target="_blank">![][play]</a>
 ```java
@@ -356,21 +359,22 @@ This is because:
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-LE12.java:31: error: reference to m2 is ambiguous
+LE12.java:5: error: reference to m2 is ambiguous
         m2((x) -&gt; x.m1());
         ^
   both method m2(FI1) in LE12 and method m2(FI2) in LE12 match
 1 error
 </pre></details>
-###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1), [15.12.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.12.2)
+###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1), [15.12.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.12.2), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le11), [2](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le12)
 ***    
 <a name="LE19.java"></a>    
 ### Question 8.8
-`1.` *Compile-error in 1*     
-`2.` *Compile-error in 2*     
-`3.` *Compile-error in 3*     
-`4.` *Runtime-error*     
-`5.` *Output: 000*     
+#### *Choose the correct answer:*
+> `1.` *Compile-error in 1*     
+> `2.` *Compile-error in 2*     
+> `3.` *Compile-error in 3*     
+> `4.` *Runtime-error*     
+> `5.` *Output: 000*     
     
 [![][code]](LE19.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE19.java" title="exec" target="_blank">![][play]</a>
 ```java
@@ -411,12 +415,12 @@ LE19.java:6: error: legacy array notation not allowed on variable-arity paramete
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-LE19.java:27: error: legacy array notation not allowed on variable-arity parameter
+LE19.java:6: error: legacy array notation not allowed on variable-arity parameter
         FI1 f2 = (Integer... x1[]) -&gt; x1.length; //2
                                ^
 1 error
 </pre></details>
-###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1)
+###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1-320), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le19)
 ***    
 <a name="LE5.java"></a>    
 ### Question 9.9
@@ -449,18 +453,19 @@ These styles cannot be mixed: it is not possible for a lambda expression to decl
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-LE5.java:21: error: &lt;identifier&gt; expected
+LE5.java:5: error: &lt;identifier&gt; expected
         FI f = (x, Double y) -&gt; x + y;
                  ^
 1 error
 </pre></details>
-###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le5)
+###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le5)
 ***    
 <a name="LE6.java"></a>    
 ### Question 10.10
-`1.` *Compile-error*     
-`2.` *Runtime-error*     
-`3.` *Output: 2.0*     
+#### *Choose the correct answer:*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *Output: 2.0*     
     
 [![][code]](LE6.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE6.java" title="exec" target="_blank">![][play]</a>
 ```java
@@ -485,21 +490,22 @@ public class LE6 {
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-LE6.java:18: error: &lt;identifier&gt; expected
+LE6.java:5: error: &lt;identifier&gt; expected
         FI f = (x, final y) -&gt; x + y;
                  ^
-LE6.java:18: error: &lt;identifier&gt; expected
+LE6.java:5: error: &lt;identifier&gt; expected
         FI f = (x, final y) -&gt; x + y;
                           ^
 2 errors
 </pre></details>
-###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1)
+###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le5)
 ***    
 <a name="LE7.java"></a>    
 ### Question 11.11
-`1.` *Compile-error*     
-`2.` *Runtime-error*     
-`3.` *Output: 0*     
+#### *Choose the correct answer:*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *Output: 0*     
     
 [![][code]](LE7.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE7.java" title="exec" target="_blank">![][play]</a>
 ```java
@@ -507,7 +513,7 @@ package lambda_expression;
 
 public class LE7 {
     public static void main(String[] args) {
-        FI f = (Integer[] x, Integer... y, Integer... z) -> x.length + y.length;
+        FI f = (Integer[] x, Integer[] y, Integer... z) -> x.length + y.length;
         System.out.println(f.get(new Integer[]{}, new Integer[]{}));
     }
     
@@ -519,35 +525,22 @@ public class LE7 {
 ```
 <details markdown="1">
 <summary><strong markdown="1" title="3">![][key]</strong></summary>
-![][yes] *Output: 0*<br> In a lambda body, a variable arity parameter is treated just like an array-typed parameter.<br><a href="LE7.java" target="_blank" title="code">![][code]</a>
+![][yes] *Output: 0*<br>In a lambda body, a variable arity parameter is treated just like an array-typed parameter.<br><a href="LE7.java" target="_blank" title="code">![][code]</a>
 </details>
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-LE7.java:18: error: ')' expected
-        FI f = (Integer[] x, Integer... y, Integer... z) -&gt; x.length + y.length;
-                                         ^
-LE7.java:18: error: ';' expected
-        FI f = (Integer[] x, Integer... y, Integer... z) -&gt; x.length + y.length;
-                                                  ^
-LE7.java:18: error: not a statement
-        FI f = (Integer[] x, Integer... y, Integer... z) -&gt; x.length + y.length;
-                                                      ^
-LE7.java:18: error: ';' expected
-        FI f = (Integer[] x, Integer... y, Integer... z) -&gt; x.length + y.length;
-                                                       ^
-LE7.java:18: error: not a statement
-        FI f = (Integer[] x, Integer... y, Integer... z) -&gt; x.length + y.length;
-                                                                     ^
-5 errors
+
+0
 </pre></details>
-###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1)
+###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le5)
 ***    
 <a name="LE8.java"></a>    
 ### Question 12.12
-`1.` *Compile-error*     
-`2.` *Runtime-error*     
-`3.` *Output: 1*     
+#### *Choose the correct answer:*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *Output: 1*     
     
 [![][code]](LE8.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE8.java" title="exec" target="_blank">![][play]</a>
 ```java
@@ -577,33 +570,34 @@ public class LE8 {
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-LE8.java:23: error: ')' expected
+LE8.java:10: error: ')' expected
         FI f = (Integer this, Integer i) -&gt; i;
                        ^
-LE8.java:23: error: illegal start of expression
+LE8.java:10: error: illegal start of expression
         FI f = (Integer this, Integer i) -&gt; i;
                             ^
-LE8.java:23: error: ';' expected
+LE8.java:10: error: ';' expected
         FI f = (Integer this, Integer i) -&gt; i;
                                      ^
-LE8.java:23: error: not a statement
+LE8.java:10: error: not a statement
         FI f = (Integer this, Integer i) -&gt; i;
                                       ^
-LE8.java:23: error: ';' expected
+LE8.java:10: error: ';' expected
         FI f = (Integer this, Integer i) -&gt; i;
                                        ^
-LE8.java:23: error: not a statement
+LE8.java:10: error: not a statement
         FI f = (Integer this, Integer i) -&gt; i;
                                             ^
 6 errors
 </pre></details>
-###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1)
+###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le8)
 ***    
 <a name="LE9.java"></a>    
 ### Question 13.13
-`1.` *Compile-error*     
-`2.` *Runtime-error*     
-`3.` *Output: 2*     
+#### *Choose the correct answer:*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *Output: 2*     
     
 [![][code]](LE9.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE9.java" title="exec" target="_blank">![][play]</a>
 ```java
@@ -630,21 +624,22 @@ their declarations mention the same Identifier.)<br><a href="LE9.java" target="_
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-LE9.java:19: error: variable x is already defined in method main(String[])
+LE9.java:5: error: variable x is already defined in method main(String[])
         FI f = (x, x) -&gt; x;
                    ^
 1 error
 </pre></details>
-###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1)
+###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le9)
 ***    
 ### 15.27.2. Lambda Body    
 ***    
 <a name="LE13.java"></a>    
 ### Question 14.14
-`1.` *Compile-error*     
-`2.` *Runtime-error*     
-`3.` *Output: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100*     
-`4.` *Output: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;200*     
+#### *Choose the correct answer:*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *Output: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100*     
+> `4.` *Output: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;200*     
     
 [![][code]](LE13.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE13.java" title="exec" target="_blank">![][play]</a>
 ```java
@@ -685,13 +680,14 @@ public class LE13 {
 100
 200
 </pre></details>
-###### *see*: [15.27.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.2)
+###### *see*: [15.27.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.2), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le13)
 ***    
 <a name="LE14.java"></a>    
 ### Question 15.15
-`1.` *Compile-error*     
-`2.` *Runtime-error*     
-`3.` *Output: done*     
+#### *Choose the correct answer:*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *Output: done*     
     
 [![][code]](LE14.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE14.java" title="exec" target="_blank">![][play]</a>
 ```java
@@ -722,10 +718,10 @@ public class LE14 {
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-LE14.java:20: error: lambda body is neither value nor void compatible
+LE14.java:7: error: lambda body is neither value nor void compatible
         m1((i) -&gt; { if (100 == i) return &quot;done&quot;; System.out.println(&quot;done&quot;); });
            ^
-LE14.java:20: error: method m1 in class LE14 cannot be applied to given types;
+LE14.java:7: error: method m1 in class LE14 cannot be applied to given types;
         m1((i) -&gt; { if (100 == i) return &quot;done&quot;; System.out.println(&quot;done&quot;); });
         ^
   required: FI
@@ -734,13 +730,14 @@ LE14.java:20: error: method m1 in class LE14 cannot be applied to given types;
       missing return value
 2 errors
 </pre></details>
-###### *see*: [15.27.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.2)
+###### *see*: [15.27.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.2), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le14)
 ***    
 <a name="LE15.java"></a>    
 ### Question 16.16
-`1.` *Compile-error*     
-`2.` *Runtime-error*     
-`3.` *Output: 30*     
+#### *Choose the correct answer:*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *Output: 30*     
     
 [![][code]](LE15.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE15.java" title="exec" target="_blank">![][play]</a>
 ```java
@@ -775,18 +772,19 @@ public class LE15 {
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-LE15.java:23: error: local variables referenced from a lambda expression must be final or effectively final
+LE15.java:10: error: local variables referenced from a lambda expression must be final or effectively final
         y = m1((x) -&gt; x + y + z);
                           ^
 1 error
 </pre></details>
-###### *see*: [15.27.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.2)
+###### *see*: [15.27.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.2), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le15)
 ***    
 <a name="LE16.java"></a>    
 ### Question 17.17
-`1.` *Compile-error*     
-`2.` *Runtime-error*     
-`3.` *Output: 10*     
+#### *Choose the correct answer:*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *Output: 10*     
     
 [![][code]](LE16.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE16.java" title="exec" target="_blank">![][play]</a>
 ```java
@@ -819,20 +817,21 @@ public class LE16 {
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-LE16.java:21: error: variable y might not have been initialized
+LE16.java:8: error: variable y might not have been initialized
         int z = m1((x) -&gt; x + y);
                               ^
 1 error
 </pre></details>
-###### *see*: [15.27.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.2)
+###### *see*: [15.27.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.2-310), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le16)
 ***    
 ### 15.27.3. Type of a Lambda Expression    
 ***    
 <a name="LE17.java"></a>    
 ### Question 18.18
-`1.` *Compile-error*     
-`2.` *Runtime-error*     
-`3.` *Output: 5*     
+#### *Choose the correct answer:*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *Output: 5*     
     
 [![][code]](LE17.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE17.java" title="exec" target="_blank">![][play]</a>
 ```java
@@ -867,18 +866,19 @@ public class LE17 {
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-LE17.java:24: error: incompatible types: List&lt;Object&gt; cannot be converted to List&lt;Integer&gt;
+LE17.java:11: error: incompatible types: List&lt;Object&gt; cannot be converted to List&lt;Integer&gt;
             List&lt;Integer&gt; list = x; //true is List&lt;Object&gt; list = x;
                                  ^
 1 error
 </pre></details>
-###### *see*: [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3)
+###### *see*: [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3-200-B), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le17)
 ***    
 <a name="LE18.java"></a>    
 ### Question 19.19
-`1.` *Compile-error*     
-`2.` *Runtime-error*     
-`3.` *Output: 5*     
+#### *Choose the correct answer:*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *Output: 5*     
     
 [![][code]](LE18.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE18.java" title="exec" target="_blank">![][play]</a>
 ```java
@@ -919,14 +919,14 @@ then the ground target type is the non-wildcard parameterization (§9.9) of T.<b
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-LE18.java:33: warning: [unchecked] unchecked method invocation: method exec in interface FI is applied to given types
+LE18.java:19: warning: [unchecked] unchecked method invocation: method exec in interface FI is applied to given types
         f.exec((List) l);
               ^
   required: List&lt;T&gt;
   found: List
   where T is a type-variable:
     T extends Object declared in interface FI
-LE18.java:33: warning: [unchecked] unchecked conversion
+LE18.java:19: warning: [unchecked] unchecked conversion
         f.exec((List) l);
                ^
   required: List&lt;T&gt;
@@ -937,14 +937,15 @@ LE18.java:33: warning: [unchecked] unchecked conversion
 
 5
 </pre></details>
-###### *see*: [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3)
+###### *see*: [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3-200-B), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le17)
 ***    
 <a name="LE20.java"></a>    
 ### Question 20.20
-`1.` *Compile-error*     
-`2.` *Runtime-error*     
-`3.` *Output: 12*     
-`4.` *Output: 21*     
+#### *Choose the correct answer:*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *Output: 12*     
+> `4.` *Output: 21*     
     
 [![][code]](LE20.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE20.java" title="exec" target="_blank">![][play]</a>
 ```java
@@ -986,9 +987,174 @@ a method signature that avoids boxing or unboxing the lambda result is preferred
 <pre>
 
 21</pre></details>
-###### *see*: [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3)
+###### *see*: [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le20)
+***    
+<a name="LE21.java"></a>    
+### Question 21.21
+#### *Choose the correct answer:*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *Output: 12*     
+> `4.` *Output: 21*     
+    
+[![][code]](LE21.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE21.java" title="exec" target="_blank">![][play]</a>
+```java
+package lambda_expression;
+
+public class LE21 {
+    public static void main(String[] args) {
+        m1((n) -> n);
+    }
+    
+    public static void m1(FI1 f) {
+        System.out.print(1);
+    }
+    
+    public static void m1(FI2 f) {
+        System.out.print(2);
+    }
+    
+    @FunctionalInterface
+    interface FI1 {
+        int get(int i);
+    }
+
+    @FunctionalInterface
+    interface FI2 {
+        Integer get(Integer i);
+    }
+}
+
+```
+<details markdown="1">
+<summary><strong markdown="1" title="1">![][key]</strong></summary>
+![][yes] *Compile-error*<br>However, if an explicitly typed lambda expression is an argument to an overloaded method,     
+a method signature that avoids boxing or unboxing the lambda result is preferred by the most specific check     
+(§15.12.2.5) - only explicitly typed lambda expression.     
+<br><a href="LE21.java" target="_blank" title="code">![][code]</a>
+</details>
+<details markdown="1">
+<summary><strong markdown="1" title="compile result">![][result]</strong></summary>
+<pre>
+LE21.java:5: error: reference to m1 is ambiguous
+        m1((n) -&gt; n);
+        ^
+  both method m1(FI1) in LE21 and method m1(FI2) in LE21 match
+1 error
+</pre></details>
+###### *see*: [see LE20](#LE20.java), [see LE12](#LE12.java), [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le20), [2](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le11), [3](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le12)
+***    
+### 15.27.4. Run-Time Evaluation of Lambda Expressions    
+***    
+<a name="LE22.java"></a>    
+### Question 22.22
+#### *Choose the correct answer:*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *Output: 12*     
+> `4.` *Output: 21*     
+    
+[![][code]](LE22.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE22.java" title="exec" target="_blank">![][play]</a>
+```java
+package lambda_expression;
+
+public class LE22 {
+    public static void main(String[] args) {
+        m1((n) -> n);
+    }
+    
+    public static void m1(FI1 f) {
+        System.out.print(1);
+    }
+    
+    public static void m1(FI2 f) {
+        System.out.print(2);
+    }
+    
+    @FunctionalInterface
+    interface FI1 {
+        Integer get(int i);
+    }
+
+    @FunctionalInterface
+    interface FI2 extends FI1 {
+        Integer get(int i);
+    }
+}
+
+```
+<details markdown="1">
+<summary><strong markdown="1" title="1">![][key]</strong></summary>
+![][yes] *Compile-error*<br>However, if an explicitly typed lambda expression is an argument to an overloaded method,     
+a method signature that avoids boxing or unboxing the lambda result is preferred by the most specific check     
+(§15.12.2.5) - only explicitly typed lambda expression.     
+<br><a href="LE22.java" target="_blank" title="code">![][code]</a>
+</details>
+<details markdown="1">
+<summary><strong markdown="1" title="compile result">![][result]</strong></summary>
+<pre>
+
+2</pre></details>
+###### *see*: [see LE20](#LE20.java), [see LE12](#LE12.java), [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le20), [2](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le11), [3](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le12)
+***    
+<a name="LE23.java"></a>    
+### Question 23.23
+#### *Choose the correct answer:*
+> `1.` *Compile-error*     
+> `2.` *Runtime-error*     
+> `3.` *Output: 12*     
+> `4.` *Output: 21*     
+    
+[![][code]](LE23.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE23.java" title="exec" target="_blank">![][play]</a>
+```java
+package lambda_expression;
+
+public class LE23 {
+    public static void main(String[] args) {
+        FI1 i = (FI1 & FI2) (int n) -> n;
+        //m1((int n) -> n);
+    }
+    
+    public static <T extends FI1 & FI2> void m1(T f) {
+        f = (int n) -> n;
+        System.out.print(((FI1) f).get(1));
+        System.out.print(((FI2) f).get(2));
+    }
+    
+    @FunctionalInterface
+    interface FI1 {
+        Integer get(int i);
+    }
+    
+    @FunctionalInterface
+    interface FI2 {
+        Integer get(int i);
+    }
+}
+
+```
+<details markdown="1">
+<summary><strong markdown="1" title="1">![][key]</strong></summary>
+![][yes] *Compile-error*<br>However, if an explicitly typed lambda expression is an argument to an overloaded method,     
+a method signature that avoids boxing or unboxing the lambda result is preferred by the most specific check     
+(§15.12.2.5) - only explicitly typed lambda expression.     
+<br><a href="LE23.java" target="_blank" title="code">![][code]</a>
+</details>
+<details markdown="1">
+<summary><strong markdown="1" title="compile result">![][result]</strong></summary>
+<pre>
+LE23.java:10: error: incompatible types: T is not a functional interface
+        f = (int n) -&gt; n;
+            ^
+1 error
+</pre></details>
+###### *see*: [see LE20](#LE20.java), [see LE12](#LE12.java), [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le20), [2](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le11), [3](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le12)
 ***    
 
+### [![][cerr] see error](/home/vns/workspace/projects/portfolio/github/java/jtest/core/expression/lambda_expression/error.md)
+-----        
+### [![][cerr] see answer](/home/vns/workspace/projects/portfolio/github/java/jtest/core/expression/lambda_expression/answer.md)
+-----        
 [![][back]](../README.md#lmb)
 
 [key]: ../../resources/images/key.png
@@ -997,4 +1163,6 @@ a method signature that avoids boxing or unboxing the lambda result is preferred
 [back]: ../../resources/images/back-24.png
 [play]: ../../resources/images/play-24.png
 [result]: ../../resources/images/settings-16-1.png
+[cerr]: ../../resources/images/compile-error-16.png
+[rerr]: ../../resources/images/runtime-error-16.png
 [yes]: ../../resources/images/yes-2-20.png

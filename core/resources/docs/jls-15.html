@@ -3979,9 +3979,9 @@ class Subclass2 implements Superinterface {
                         </p>
                      </li>
                      <li class="listitem">
-                        <p class="note">Overload resolution has to be completed before
+                        <p class="note"><span style="display:inline;color:rgb(0,0,255);background-color:rgb(255,255,155);"><sup style="display:inline"><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE23.java"title="LE23.java">[1]</a><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE21.java"title="LE21.java">[2]</a><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE12.java"title="LE12.java">[3]</a><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE22.java"title="LE22.java">[4]</a></sup><a name="le12"></a>Overload resolution has to be completed before
                                  the arguments' target types will be known
-                        </p>
+                        </span></p>
                      </li>
                   </ul>
                </div>
@@ -12238,7 +12238,7 @@ t -&gt; { t.start(); }           // Single inferred-type parameter
                      </div>
                   </div>
                </div>
-               <p class="norm-static"><span style="display:inline;color:rgb(0,0,255);background-color:rgb(255,255,155);"><sup style="display:inline"><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE5.java"title="LE5.java">[1]</a></sup><a name="le5"></a><a name="jls-15.27.1-100"></a>
+               <p class="norm-static"><span style="display:inline;color:rgb(0,0,255);background-color:rgb(255,255,155);"><sup style="display:inline"><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE6.java"title="LE6.java">[1]</a><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE5.java"title="LE5.java">[2]</a><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE7.java"title="LE7.java">[3]</a></sup><a name="le5"></a><a name="jls-15.27.1-100"></a>
                   The formal parameters of a lambda expression may have either declared
                   types or inferred types. These styles cannot be mixed: it is not
                   possible for a lambda expression to declare the types of some of its
@@ -12448,33 +12448,33 @@ t -&gt; { t.start(); }           // Single inferred-type parameter
                   compile-time error if <code class="literal">final</code> appears more than once as a modifier for
                   a formal parameter declaration.
                </p>
-               <p class="norm-error"><a name="jls-15.27.1-320"></a>It is a
+               <p class="norm-error"><span style="display:inline;color:rgb(0,0,255);background-color:rgb(255,255,155);"><sup style="display:inline"><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE19.java"title="LE19.java">[1]</a></sup><a name="le19"></a><a name="jls-15.27.1-320"></a>It is a
                   compile-time error to use mixed array notation
                   (<a class="xref" href="http://docs.oracle.com/javase/specs/jls/se8/html/jls-10.html#jls-10.2" title="10.2. Array Variables">§10.2</a>) for a variable arity parameter.
-               </p>
+               </span></p>
                <p class="norm-static"><a name="jls-15.27.1-330"></a>The
                   scope and shadowing of a formal parameter declaration is specified in
                   <a class="xref" href="http://docs.oracle.com/javase/specs/jls/se8/html/jls-6.html#jls-6.3" title="6.3. Scope of a Declaration">§6.3</a> and <a class="xref" href="http://docs.oracle.com/javase/specs/jls/se8/html/jls-6.html#jls-6.4" title="6.4. Shadowing and Obscuring">§6.4</a>.
                </p>
-               <p class="norm-error"><a name="jls-15.27.1-340"></a>It is a
+               <p class="norm-error"><span style="display:inline;color:rgb(0,0,255);background-color:rgb(255,255,155);"><sup style="display:inline"><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE9.java"title="LE9.java">[1]</a></sup><a name="le9"></a><a name="jls-15.27.1-340"></a>It is a
                   compile-time error for a lambda expression to declare two formal
                   parameters with the same name. (That is, their declarations mention
                   the same <span class="emphasis"><em>Identifier</em></span>.)
-               </p>
-               <p class="norm-error"><a name="jls-15.27.1-350"></a>It is a
+               </span></p>
+               <p class="norm-error"><span style="display:inline;color:rgb(0,0,255);background-color:rgb(255,255,155);"><sup style="display:inline"><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE10.java"title="LE10.java">[1]</a></sup><a name="le10"></a><a name="jls-15.27.1-350"></a>It is a
                   compile-time error if a lambda parameter has the name <code class="literal">_</code>
                   (that is, a single underscore character).
-               </p>
+               </span></p>
                <p class="note">The use of the variable name <code class="literal">_</code> in any
                   context is discouraged. Future versions of the Java programming language may reserve
                   this name as a keyword and/or give it special semantics.
                </p>
-               <p class="norm-error"><a name="jls-15.27.1-360"></a>It is a
+               <p class="norm-error"><span style="display:inline;color:rgb(0,0,255);background-color:rgb(255,255,155);"><sup style="display:inline"><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE8.java"title="LE8.java">[1]</a></sup><a name="le8"></a><a name="jls-15.27.1-360"></a>It is a
                   compile-time error if a receiver parameter
                   (<a class="xref" href="http://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.4.1" title="8.4.1. Formal Parameters">§8.4.1</a>) appears in
                   the <span class="emphasis"><em>FormalParameters</em></span> of a lambda
                   expression.
-               </p>
+               </span></p>
                <p class="norm-error"><a name="jls-15.27.1-370"></a>It is a
                   compile-time error if a formal parameter that is declared <code class="literal">final</code> is
                   assigned to within the body of the lambda expression.
@@ -12500,7 +12500,7 @@ t -&gt; { t.start(); }           // Single inferred-type parameter
                   of type <code class="literal">double</code> to contain an element of the double-extended-exponent
                   value set that is not also an element of the double value set.
                </p>
-               <p class="note">When the parameter types of a lambda expression are
+               <p class="note"><span style="display:inline;color:rgb(0,0,255);background-color:rgb(255,255,155);"><sup style="display:inline"><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE22.java"title="LE22.java">[1]</a><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE23.java"title="LE23.java">[2]</a><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE11.java"title="LE11.java">[3]</a><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE21.java"title="LE21.java">[4]</a><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE12.java"title="LE12.java">[5]</a></sup><a name="le11"></a>When the parameter types of a lambda expression are
                   inferred, the same lambda body can be interpreted in different ways,
                   depending on the context in which it appears. Specifically, the types
                   of expressions in the body, the checked exceptions thrown by the body,
@@ -12508,7 +12508,7 @@ t -&gt; { t.start(); }           // Single inferred-type parameter
                   parameters' inferred types. This implies that inference of parameter
                   types must occur "before" attempting to type-check the body of the
                   lambda expression.
-               </p>
+               </span></p>
             </div>
             <div class="section" title="15.27.2. Lambda Body">
                <div class="titlepage">
@@ -12540,13 +12540,13 @@ t -&gt; { t.start(); }           // Single inferred-type parameter
                   </div>
                   
                </div>
-               <p class="norm-static"><a name="jls-15.27.2-120"></a>Unlike
+               <p class="norm-static"><span style="display:inline;color:rgb(0,0,255);background-color:rgb(255,255,155);"><sup style="display:inline"><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE13.java"title="LE13.java">[1]</a></sup><a name="le13"></a><a name="jls-15.27.2-120"></a>Unlike
                   code appearing in anonymous class declarations, the meaning of names
                   and the <code class="literal">this</code> and <code class="literal">super</code> keywords appearing in a lambda body, along
                   with the accessibility of referenced declarations, are the same as in
                   the surrounding context (except that lambda parameters introduce new
                   names).
-               </p>
+               </span></p>
                <p class="note">The transparency of <code class="literal">this</code> (both explicit and
                   implicit) in the body of a lambda expression - that is, treating it
                   the same as in the surrounding context - allows more flexibility for
@@ -12572,10 +12572,10 @@ t -&gt; { t.start(); }           // Single inferred-type parameter
                   statement in the block has the form <code class="literal">return</code>
                   <span class="emphasis"><em>Expression</em></span><code class="literal">;</code>.
                </p>
-               <p class="norm-error"><a name="jls-15.27.2-220"></a>It is a
+               <p class="norm-error"><span style="display:inline;color:rgb(0,0,255);background-color:rgb(255,255,155);"><sup style="display:inline"><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE14.java"title="LE14.java">[1]</a></sup><a name="le14"></a><a name="jls-15.27.2-220"></a>It is a
                   compile-time error if a block lambda body is neither void-compatible
                   nor value-compatible.
-               </p>
+               </span></p>
                <p class="norm-static"><a name="jls-15.27.2-230"></a>In a
                   value-compatible block lambda body, the <span class="emphasis"><em>result
                         expressions</em></span> are any expressions that may produce an
@@ -12607,17 +12607,17 @@ t -&gt; { t.start(); }           // Single inferred-type parameter
                   the values of constant expressions, and these may include names that
                   reference constant variables.
                </p>
-               <p class="norm-error"><a name="jls-15.27.2-300"></a>Any local
+               <p class="norm-error"><span style="display:inline;color:rgb(0,0,255);background-color:rgb(255,255,155);"><sup style="display:inline"><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE15.java"title="LE15.java">[1]</a></sup><a name="le15"></a><a name="jls-15.27.2-300"></a>Any local
                   variable, formal parameter, or exception parameter used but not
                   declared in a lambda expression must either be declared <code class="literal">final</code> or be
                   effectively final (<a class="xref" href="http://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.12.4" title="4.12.4. final Variables">§4.12.4</a>), or a compile-time
                   error occurs where the use is attempted.
-               </p>
-               <p class="norm-error"><a name="jls-15.27.2-310"></a>Any local
+               </span></p>
+               <p class="norm-error"><span style="display:inline;color:rgb(0,0,255);background-color:rgb(255,255,155);"><sup style="display:inline"><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE16.java"title="LE16.java">[1]</a></sup><a name="le16"></a><a name="jls-15.27.2-310"></a>Any local
                   variable used but not declared in a lambda body must be definitely
                   assigned (<a class="xref" href="http://docs.oracle.com/javase/specs/jls/se8/html/jls-16.html" title="Chapter 16. Definite Assignment">§16 (<i>Definite Assignment</i>)</a>) before the lambda body, or a
                   compile-time error occurs.
-               </p>
+               </span></p>
                <p class="note">Similar rules on variable use apply in the body of
                   an inner class (<a class="xref" href="http://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.1.3" title="8.1.3. Inner Classes and Enclosing Instances">§8.1.3</a>). The restriction to
                   effectively final variables prohibits access to dynamically-changing
@@ -12734,12 +12734,12 @@ void m10(String[] arr) {
                         </p>
                      </li>
                      <li class="listitem">
-                        <p class="norm-static"><a name="jls-15.27.3-200-B"></a>
+                        <p class="norm-static"><span style="display:inline;color:rgb(0,0,255);background-color:rgb(255,255,155);"><sup style="display:inline"><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE18.java"title="LE18.java">[1]</a><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE17.java"title="LE17.java">[2]</a></sup><a name="le17"></a><a name="jls-15.27.3-200-B"></a>
                                  If <span class="type">T</span> is a wildcard-parameterized functional interface type and
                                  the lambda expression is implicitly typed, then the ground
                                  target type is the non-wildcard parameterization
                                  (<a class="xref" href="http://docs.oracle.com/javase/specs/jls/se8/html/jls-9.html#jls-9.9" title="9.9. Function Types">§9.9</a>) of <span class="type">T</span>.
-                        </p>
+                        </span></p>
                      </li>
                      <li class="listitem">
                         <p class="norm-static"><a name="jls-15.27.3-200-C"></a>
@@ -12835,7 +12835,7 @@ void m10(String[] arr) {
                   used.)  In addition, more flexibility with parameter types would add
                   to the complexity of type inference and overload resolution.
                </p>
-               <p class="note">Note that while boxing is not allowed in a strict
+               <p class="note"><span style="display:inline;color:rgb(0,0,255);background-color:rgb(255,255,155);"><sup style="display:inline"><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE23.java"title="LE23.java">[1]</a><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE21.java"title="LE21.java">[2]</a><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE22.java"title="LE22.java">[3]</a><a href="https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE20.java"title="LE20.java">[4]</a></sup><a name="le20"></a>Note that while boxing is not allowed in a strict
                   invocation context, boxing of lambda result expressions
                   is <span class="emphasis"><em>always</em></span> allowed - that is, the result
                   expression appears in an assignment context, regardless of the context
@@ -12844,7 +12844,7 @@ void m10(String[] arr) {
                   signature that avoids boxing or unboxing the lambda result is
                   preferred by the most specific check
                   (<a class="xref" href="http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.12.2.5" title="15.12.2.5. Choosing the Most Specific Method">§15.12.2.5</a>).
-               </p>
+               </span></p>
                <p class="note">If the body of a lambda is a statement expression
                   (that is, an expression that would be allowed to stand alone as a
                   statement), it is compatible with a <code class="literal">void</code>-producing function type;
