@@ -1,3 +1,8 @@
+
+### [![][cerr] ERROR](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/error.md)
+        
+### [![][key] ANSWER](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/answer.md)
+-----        
 [![][back]](../README.md#lmb)
 # 15.27 Lambda Expressions     
 ### 15.27 Lambda Expressions    
@@ -1028,7 +1033,10 @@ public class LE21 {
 ```
 <details markdown="1">
 <summary><strong markdown="1" title="1">![][key]</strong></summary>
-![][yes] *Compile-error*<br>However, if an explicitly typed lambda expression is an argument to an overloaded method,     
+![][yes] *Compile-error*<br>Certain argument expressions that contain implicitly typed lambda expressions (§15.27.1) or inexact method references (§15.13.1) are ignored by the applicability tests,     
+because their meaning cannot be determined until a target type is selected.     
+     
+However, if an explicitly typed lambda expression is an argument to an overloaded method,     
 a method signature that avoids boxing or unboxing the lambda result is preferred by the most specific check     
 (§15.12.2.5) - only explicitly typed lambda expression.     
 <br><a href="LE21.java" target="_blank" title="code">![][code]</a>
@@ -1042,7 +1050,7 @@ LE21.java:5: error: reference to m1 is ambiguous
   both method m1(FI1) in LE21 and method m1(FI2) in LE21 match
 1 error
 </pre></details>
-###### *see*: [see LE20](#LE20.java), [see LE12](#LE12.java), [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le20), [2](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le11), [3](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le12)
+###### *see*: [LE20](#LE20.java), [LE12](#LE12.java), [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le20), [2](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le11), [3](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le12), [4](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le21)
 ***    
 ### 15.27.4. Run-Time Evaluation of Lambda Expressions    
 ***    
@@ -1151,10 +1159,11 @@ LE23.java:10: error: incompatible types: T is not a functional interface
 ###### *see*: [see LE20](#LE20.java), [see LE12](#LE12.java), [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le20), [2](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le11), [3](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le12)
 ***    
 
-### [![][cerr] see error](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/error.md)
+### [![][cerr] ERROR](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/error.md)
+        
+### [![][key] ANSWER](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/answer.md)
 -----        
-### [![][key] see answer](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/answer.md)
------        
+
 [![][back]](../README.md#lmb)
 
 [key]: ../../resources/images/key.png

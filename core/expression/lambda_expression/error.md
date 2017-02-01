@@ -6,10 +6,7 @@
 #### 15.27 Lambda Expressions    
 ***    
 
- 
-### Question 2.2
-    
-    
+###  [![][cerr] Question 2.2](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE2.java)    
 [![][code]](LE2.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE2.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
@@ -39,12 +36,8 @@ context (§5.2), an invocation context (§5.3), or a casting context (§5.5).
     1 error     
 </pre><a href="LE2.java" target="_blank" title="code">![][code]</a>
 </details>
-##### [![][cerr] see LE2.java](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE2.java)
 -----        
- 
-### Question 3.3
-    
-    
+###  [![][cerr] Question 3.3](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE3.java)    
 [![][code]](LE3.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE3.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
@@ -70,12 +63,8 @@ public class LE3 {
 <summary><strong markdown="1" title="1">![][key]</strong></summary>
 ![][yes] *Compile-error*<br>Lambda expressions cannot declare type parameters.<br><a href="LE3.java" target="_blank" title="code">![][code]</a>
 </details>
-##### [![][cerr] see LE3.java](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE3.java)
 -----        
- 
-### Question 4.4
-    
-    
+###  [![][cerr] Question 4.4](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE4.java)    
 [![][code]](LE4.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE4.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
@@ -95,15 +84,11 @@ public class LE4 {
 ![][yes] *Compile-error in 2*<br>There is a precedent for ambiguity resolution involving casts, which essentially prohibits the use of - and + following a non-primitive cast (§15.15),     
 but to extend that approach to generic lambdas would involve invasive changes to the grammar.<br><a href="LE4.java" target="_blank" title="code">![][code]</a>
 </details>
-##### [![][cerr] see LE4.java](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE4.java)
 -----        
 #### 15.27.1. Lambda Parameters    
 ***    
 
- 
-### Question 5.5
-    
-    
+###  [![][cerr] Question 5.5](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE10.java)    
 [![][code]](LE10.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE10.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
@@ -125,12 +110,8 @@ public class LE10 {
 <summary><strong markdown="1" title="1">![][key]</strong></summary>
 ![][yes] *Compile-error*<br>It is a compile-time error if a lambda parameter has the name _ (that is, a single underscore character).<br><a href="LE10.java" target="_blank" title="code">![][code]</a>
 </details>
-##### [![][cerr] see LE10.java](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE10.java)
 -----        
- 
-### Question 6.6
-    
-    
+###  [![][cerr] Question 6.6](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE11.java)    
 [![][code]](LE11.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE11.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
@@ -172,12 +153,8 @@ type correctness of code in the body all depend on the parameters' inferred type
 implies that inference of parameter types must occur "before" attempting to type-check the     
 body of the lambda expression.<br><a href="LE11.java" target="_blank" title="code">![][code]</a>
 </details>
-##### [![][cerr] see LE11.java](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE11.java)
 -----        
- 
-### Question 7.7
-    
-    
+###  [![][cerr] Question 7.7](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE12.java)    
 [![][code]](LE12.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE12.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
@@ -234,12 +211,8 @@ This is because:
 • Overload resolution has to be completed before the arguments' target types will be known     
 </pre><a href="LE12.java" target="_blank" title="code">![][code]</a>
 </details>
-##### [![][cerr] see LE12.java](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE12.java)
 -----        
- 
-### Question 8.8
-    
-    
+###  [![][cerr] Question 8.8](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE19.java)    
 [![][code]](LE19.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE19.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
@@ -276,12 +249,8 @@ LE19.java:6: error: legacy array notation not allowed on variable-arity paramete
 1 error     
 </pre><a href="LE19.java" target="_blank" title="code">![][code]</a>
 </details>
-##### [![][cerr] see LE19.java](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE19.java)
 -----        
- 
-### Question 9.9
-    
-    
+###  [![][cerr] Question 9.9](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE5.java)    
 [![][code]](LE5.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE5.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
@@ -303,12 +272,8 @@ public class LE5 {
 ![][yes] *Compile-error*<br>The formal parameters of a lambda expression may have either declared types or inferred types.          
 These styles cannot be mixed: it is not possible for a lambda expression to declare the types of some of its parameters but leave others to be inferred.<br><a href="LE5.java" target="_blank" title="code">![][code]</a>
 </details>
-##### [![][cerr] see LE5.java](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE5.java)
 -----        
- 
-### Question 10.10
-    
-    
+###  [![][cerr] Question 10.10](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE6.java)    
 [![][code]](LE6.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE6.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
@@ -329,12 +294,8 @@ public class LE6 {
 <summary><strong markdown="1" title="1">![][key]</strong></summary>
 ![][yes] *Compile-error*<br>Only parameters with declared types can have modifiers.<br><a href="LE6.java" target="_blank" title="code">![][code]</a>
 </details>
-##### [![][cerr] see LE6.java](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE6.java)
 -----        
- 
-### Question 12.12
-    
-    
+###  [![][cerr] Question 12.12](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE8.java)    
 [![][code]](LE8.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE8.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
@@ -360,12 +321,8 @@ public class LE8 {
 <summary><strong markdown="1" title="1">![][key]</strong></summary>
 ![][yes] *Compile-error*<br>It is a compile-time error if a receiver parameter (§8.4.1) appears in the FormalParameters of a lambda expression.<br><a href="LE8.java" target="_blank" title="code">![][code]</a>
 </details>
-##### [![][cerr] see LE8.java](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE8.java)
 -----        
- 
-### Question 13.13
-    
-    
+###  [![][cerr] Question 13.13](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE9.java)    
 [![][code]](LE9.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE9.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
@@ -388,15 +345,11 @@ public class LE9 {
 ![][yes] *Compile-error*<br>It is a compile-time error for a lambda expression to declare two formal parameters with the same name.<br>(That is,      
 their declarations mention the same Identifier.)<br><a href="LE9.java" target="_blank" title="code">![][code]</a>
 </details>
-##### [![][cerr] see LE9.java](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE9.java)
 -----        
 #### 15.27.2. Lambda Body    
 ***    
 
- 
-### Question 15.15
-    
-    
+###  [![][cerr] Question 15.15](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE14.java)    
 [![][code]](LE14.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE14.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
@@ -423,12 +376,8 @@ public class LE14 {
 <summary><strong markdown="1" title="1">![][key]</strong></summary>
 ![][yes] *Compile-error*<br>It is a compile-time error if a block lambda body is neither void-compatible nor value-compatible.<br><a href="LE14.java" target="_blank" title="code">![][code]</a>
 </details>
-##### [![][cerr] see LE14.java](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE14.java)
 -----        
- 
-### Question 16.16
-    
-    
+###  [![][cerr] Question 16.16](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE15.java)    
 [![][code]](LE15.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE15.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
@@ -459,12 +408,8 @@ public class LE15 {
 <summary><strong markdown="1" title="1">![][key]</strong></summary>
 ![][yes] *Compile-error*<br>Any local variable, formal parameter, or exception parameter used but not declared in a lambda expression must either be declared final or be effectively final (§4.12.4), or a compile-time error occurs where the use is attempted.<br><a href="LE15.java" target="_blank" title="code">![][code]</a>
 </details>
-##### [![][cerr] see LE15.java](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE15.java)
 -----        
- 
-### Question 17.17
-    
-    
+###  [![][cerr] Question 17.17](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE16.java)    
 [![][code]](LE16.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE16.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
@@ -493,15 +438,11 @@ public class LE16 {
 <summary><strong markdown="1" title="1">![][key]</strong></summary>
 ![][yes] *Compile-error*<br>Any local variable used but not declared in a lambda body must be definitely assigned (§16 (Definite Assignment)) before the lambda body, or a compile-time error occurs.<br><a href="LE16.java" target="_blank" title="code">![][code]</a>
 </details>
-##### [![][cerr] see LE16.java](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE16.java)
 -----        
 #### 15.27.3. Type of a Lambda Expression    
 ***    
 
- 
-### Question 18.18
-    
-    
+###  [![][cerr] Question 18.18](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE17.java)    
 [![][code]](LE17.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE17.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
@@ -532,12 +473,8 @@ public class LE17 {
 <summary><strong markdown="1" title="1">![][key]</strong></summary>
 ![][yes] *Compile-error*<br>If T is a wildcard-parameterized functional interface type and the lambda expression is implicitly typed, then the ground target type is the non-wildcard parameterization (§9.9) of T.<br><a href="LE17.java" target="_blank" title="code">![][code]</a>
 </details>
-##### [![][cerr] see LE17.java](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE17.java)
 -----        
- 
-### Question 21.21
-    
-    
+###  [![][cerr] Question 21.21](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE21.java)    
 [![][code]](LE21.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE21.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
@@ -569,20 +506,19 @@ public class LE21 {
 ```
 <details markdown="1">
 <summary><strong markdown="1" title="1">![][key]</strong></summary>
-![][yes] *Compile-error*<br>However, if an explicitly typed lambda expression is an argument to an overloaded method,     
+![][yes] *Compile-error*<br>Certain argument expressions that contain implicitly typed lambda expressions (§15.27.1) or inexact method references (§15.13.1) are ignored by the applicability tests,     
+because their meaning cannot be determined until a target type is selected.     
+     
+However, if an explicitly typed lambda expression is an argument to an overloaded method,     
 a method signature that avoids boxing or unboxing the lambda result is preferred by the most specific check     
 (§15.12.2.5) - only explicitly typed lambda expression.     
 <br><a href="LE21.java" target="_blank" title="code">![][code]</a>
 </details>
-##### [![][cerr] see LE21.java](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE21.java)
 -----        
 #### 15.27.4. Run-Time Evaluation of Lambda Expressions    
 ***    
 
- 
-### Question 22.22
-    
-    
+###  [![][cerr] Question 22.22](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE22.java)    
 [![][code]](LE22.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE22.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
@@ -619,12 +555,8 @@ a method signature that avoids boxing or unboxing the lambda result is preferred
 (§15.12.2.5) - only explicitly typed lambda expression.     
 <br><a href="LE22.java" target="_blank" title="code">![][code]</a>
 </details>
-##### [![][cerr] see LE22.java](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE22.java)
 -----        
- 
-### Question 23.23
-    
-    
+###  [![][cerr] Question 23.23](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE23.java)    
 [![][code]](LE23.java "code")<a href="http://localhost:8080/jexecutor/editor?path=expression/lambda_expression/LE23.java" title="exec" target="_blank">![][play]</a>
 ```java
 package lambda_expression;
@@ -660,7 +592,6 @@ a method signature that avoids boxing or unboxing the lambda result is preferred
 (§15.12.2.5) - only explicitly typed lambda expression.     
 <br><a href="LE23.java" target="_blank" title="code">![][code]</a>
 </details>
-##### [![][cerr] see LE23.java](https://github.com/vnsmn/jtest/blob/master/core/expression/lambda_expression/readme.md#LE23.java)
 -----        
 ### RUNTIME-ERROR   
 -----     
