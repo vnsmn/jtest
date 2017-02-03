@@ -587,8 +587,8 @@ public class LE23 {
 ```
 <details markdown="1">
 <summary><strong markdown="1" title="1">![][key]</strong></summary>
-![][yes] *Compile-error*<br>When the parameter types of a lambda expression are inferred, the same lambda body can be ...<sup>[[1]](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le11)</sup><br>     
-Overload resolution has to be completed before the arguments' target types will be known<sup>[[2]](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le12)</sup><br>     
+![][yes] *Compile-error*<br>When the parameter types of a lambda expression are inferred, the same lambda body can be ...<sup>[[1]](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le11)</sup>     
+Overload resolution has to be completed before the arguments' target types will be known<sup>[[2]](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le12)</sup>     
 Note that while boxing is not allowed in a strict invocation context, boxing of lambda result expressions is always allowed - that is, the result expression appears in an assignment context, regardless of the context enclosing the lambda expression. However, if an explicitly typed lambda expression is an argument to an overloaded method, a method signature that avoids boxing or unboxing the lambda result is preferred by the most specific check (§15.12.2.5).<sup>[[3]](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le20)</sup><br><a href="LE23.java" target="_blank" title="code">![][code]</a>
 </details>
 -----        
