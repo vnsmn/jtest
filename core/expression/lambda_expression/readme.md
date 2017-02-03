@@ -45,7 +45,8 @@ public class LE1 {
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-</pre></details>
+
+234</pre></details>
 ###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27), [1](../../resources/docs/jls-15.html#le1)
 ***    
 <a name="LE2.java"></a>    
@@ -87,6 +88,10 @@ context (§5.2), an invocation context (§5.3), or a casting context (§5.5).
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
+LE2.java:6: error: not a statement
+        (i1) -&gt; i1 + i;
+        ^
+1 error
 </pre></details>
 ###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27), [1](../../resources/docs/jls-15.html#le1)
 ***    
@@ -125,6 +130,25 @@ public class LE3 {
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
+LE3.java:6: error: illegal start of expression
+        foo((FI&lt;Integer, Integer&gt;) &lt; Integer, Integer &gt; (w) -&gt; w);
+                                                        ^
+LE3.java:6: error: ';' expected
+        foo((FI&lt;Integer, Integer&gt;) &lt; Integer, Integer &gt; (w) -&gt; w);
+                                                         ^
+LE3.java:6: error: illegal start of expression
+        foo((FI&lt;Integer, Integer&gt;) &lt; Integer, Integer &gt; (w) -&gt; w);
+                                                          ^
+LE3.java:6: error: ';' expected
+        foo((FI&lt;Integer, Integer&gt;) &lt; Integer, Integer &gt; (w) -&gt; w);
+                                                           ^
+LE3.java:6: error: not a statement
+        foo((FI&lt;Integer, Integer&gt;) &lt; Integer, Integer &gt; (w) -&gt; w);
+                                                               ^
+LE3.java:6: error: ';' expected
+        foo((FI&lt;Integer, Integer&gt;) &lt; Integer, Integer &gt; (w) -&gt; w);
+                                                                ^
+6 errors
 </pre></details>
 ###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27), [1](../../resources/docs/jls-15.html#le3)
 ***    
@@ -158,6 +182,15 @@ but to extend that approach to generic lambdas would involve invasive changes to
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
+LE4.java:7: error: cannot find symbol
+        Integer i2 = (Integer) +d; //2
+                      ^
+  symbol:   variable Integer
+  location: class LE4
+LE4.java:7: error: illegal start of type
+        Integer i2 = (Integer) +d; //2
+                     ^
+2 errors
 </pre></details>
 ###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27), [1](../../resources/docs/jls-15.html#le4)
 ***    
@@ -194,6 +227,16 @@ public class LE10 {
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
+LE10.java:5: error: '_' used as an identifier
+        FI f = (_) -&gt; _;
+                ^
+  (use of '_' as an identifier is forbidden for lambda parameters)
+LE10.java:5: warning: '_' used as an identifier
+        FI f = (_) -&gt; _;
+                      ^
+  (use of '_' as an identifier might not be supported in releases after Java SE 8)
+1 error
+1 warning
 </pre></details>
 ###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1), [1](../../resources/docs/jls-15.html#le10)
 ***    
@@ -248,6 +291,10 @@ body of the lambda expression.<br><a href="LE11.java" target="_blank" title="cod
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
+LE11.java:5: error: unreported exception Exception; must be caught or declared to be thrown
+        FI1 f1 = (x) -&gt; x.m1();
+                            ^
+1 error
 </pre></details>
 ###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1), [1](../../resources/docs/jls-15.html#le11)
 ***    
@@ -317,6 +364,11 @@ This is because:
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
+LE12.java:5: error: reference to m2 is ambiguous
+        m2((x) -&gt; x.m1());
+        ^
+  both method m2(FI1) in LE12 and method m2(FI2) in LE12 match
+1 error
 </pre></details>
 ###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1), [15.12.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.12.2), [1](../../resources/docs/jls-15.html#le11), [2](../../resources/docs/jls-15.html#le12)
 ***    
@@ -368,6 +420,10 @@ LE19.java:6: error: legacy array notation not allowed on variable-arity paramete
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
+LE19.java:6: error: legacy array notation not allowed on variable-arity parameter
+        FI1 f2 = (Integer... x1[]) -&gt; x1.length; //2
+                               ^
+1 error
 </pre></details>
 ###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1-320), [1](../../resources/docs/jls-15.html#le19)
 ***    
@@ -402,6 +458,10 @@ These styles cannot be mixed: it is not possible for a lambda expression to decl
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
+LE5.java:5: error: &lt;identifier&gt; expected
+        FI f = (x, Double y) -&gt; x + y;
+                 ^
+1 error
 </pre></details>
 ###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1), [1](../../resources/docs/jls-15.html#le5)
 ***    
@@ -435,6 +495,13 @@ public class LE6 {
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
+LE6.java:5: error: &lt;identifier&gt; expected
+        FI f = (x, final y) -&gt; x + y;
+                 ^
+LE6.java:5: error: &lt;identifier&gt; expected
+        FI f = (x, final y) -&gt; x + y;
+                          ^
+2 errors
 </pre></details>
 ###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1), [1](../../resources/docs/jls-15.html#le5)
 ***    
@@ -468,6 +535,8 @@ public class LE7 {
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
+
+0
 </pre></details>
 ###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1), [1](../../resources/docs/jls-15.html#le5)
 ***    
@@ -506,6 +575,25 @@ public class LE8 {
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
+LE8.java:10: error: ')' expected
+        FI f = (Integer this, Integer i) -&gt; i;
+                       ^
+LE8.java:10: error: illegal start of expression
+        FI f = (Integer this, Integer i) -&gt; i;
+                            ^
+LE8.java:10: error: ';' expected
+        FI f = (Integer this, Integer i) -&gt; i;
+                                     ^
+LE8.java:10: error: not a statement
+        FI f = (Integer this, Integer i) -&gt; i;
+                                      ^
+LE8.java:10: error: ';' expected
+        FI f = (Integer this, Integer i) -&gt; i;
+                                       ^
+LE8.java:10: error: not a statement
+        FI f = (Integer this, Integer i) -&gt; i;
+                                            ^
+6 errors
 </pre></details>
 ###### *see*: [15.27.1](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1), [1](../../resources/docs/jls-15.html#le8)
 ***    
@@ -541,6 +629,10 @@ their declarations mention the same Identifier.)<br><a href="LE9.java" target="_
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
+LE9.java:5: error: variable x is already defined in method main(String[])
+        FI f = (x, x) -&gt; x;
+                   ^
+1 error
 </pre></details>
 ###### *see*: [15.27](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.1), [1](../../resources/docs/jls-15.html#le9)
 ***    
@@ -589,6 +681,9 @@ public class LE13 {
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
+
+100
+200
 </pre></details>
 ###### *see*: [15.27.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.2), [1](../../resources/docs/jls-15.html#le13)
 ***    
@@ -628,6 +723,17 @@ public class LE14 {
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
+LE14.java:7: error: lambda body is neither value nor void compatible
+        m1((i) -&gt; { if (100 == i) return &quot;done&quot;; System.out.println(&quot;done&quot;); });
+           ^
+LE14.java:7: error: method m1 in class LE14 cannot be applied to given types;
+        m1((i) -&gt; { if (100 == i) return &quot;done&quot;; System.out.println(&quot;done&quot;); });
+        ^
+  required: FI
+  found: (i)-&gt;{ if [...]&quot;); }
+  reason: argument mismatch; bad return type in lambda expression
+      missing return value
+2 errors
 </pre></details>
 ###### *see*: [15.27.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.2), [1](../../resources/docs/jls-15.html#le14)
 ***    
@@ -671,6 +777,10 @@ public class LE15 {
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
+LE15.java:10: error: local variables referenced from a lambda expression must be final or effectively final
+        y = m1((x) -&gt; x + y + z);
+                          ^
+1 error
 </pre></details>
 ###### *see*: [15.27.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.2), [1](../../resources/docs/jls-15.html#le15)
 ***    
@@ -712,6 +822,10 @@ public class LE16 {
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
+LE16.java:8: error: variable y might not have been initialized
+        int z = m1((x) -&gt; x + y);
+                              ^
+1 error
 </pre></details>
 ###### *see*: [15.27.2](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.2-310), [1](../../resources/docs/jls-15.html#le16)
 ***    
@@ -757,6 +871,10 @@ public class LE17 {
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
+LE17.java:11: error: incompatible types: List&lt;Object&gt; cannot be converted to List&lt;Integer&gt;
+            List&lt;Integer&gt; list = x; //true is List&lt;Object&gt; list = x;
+                                 ^
+1 error
 </pre></details>
 ###### *see*: [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3-200-B), [1](../../resources/docs/jls-15.html#le17)
 ***    
@@ -806,6 +924,23 @@ then the ground target type is the non-wildcard parameterization (§9.9) of T.<b
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
+LE18.java:19: warning: [unchecked] unchecked method invocation: method exec in interface FI is applied to given types
+        f.exec((List) l);
+              ^
+  required: List&lt;T&gt;
+  found: List
+  where T is a type-variable:
+    T extends Object declared in interface FI
+LE18.java:19: warning: [unchecked] unchecked conversion
+        f.exec((List) l);
+               ^
+  required: List&lt;T&gt;
+  found:    List
+  where T is a type-variable:
+    T extends Object declared in interface FI
+2 warnings
+
+5
 </pre></details>
 ###### *see*: [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3-200-B), [1](../../resources/docs/jls-15.html#le17)
 ***    
@@ -855,7 +990,8 @@ a method signature that avoids boxing or unboxing the lambda result is preferred
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-</pre></details>
+
+21</pre></details>
 ###### *see*: [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3), [1](../../resources/docs/jls-15.html#le20)
 ***    
 <a name="LE21.java"></a>    
@@ -908,6 +1044,11 @@ a method signature that avoids boxing or unboxing the lambda result is preferred
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
+LE21.java:5: error: reference to m1 is ambiguous
+        m1((n) -&gt; n);
+        ^
+  both method m1(FI1) in LE21 and method m1(FI2) in LE21 match
+1 error
 </pre></details>
 ###### *see*: [LE20](#LE20.java), [LE12](#LE12.java), [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3), [1](../../resources/docs/jls-15.html#le20), [2](../../resources/docs/jls-15.html#le11), [3](../../resources/docs/jls-15.html#le12), [4](../../resources/docs/jls-15.html#le21)
 ***    
@@ -960,7 +1101,8 @@ a method signature that avoids boxing or unboxing the lambda result is preferred
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
-</pre></details>
+
+2</pre></details>
 ###### *see*: [see LE20](#LE20.java), [see LE12](#LE12.java), [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3), [1](../../resources/docs/jls-15.html#le20), [2](../../resources/docs/jls-15.html#le11), [3](../../resources/docs/jls-15.html#le12)
 ***    
 <a name="LE23.java"></a>    
@@ -1008,6 +1150,10 @@ Note that while boxing is not allowed in a strict invocation context, boxing of 
 <details markdown="1">
 <summary><strong markdown="1" title="compile result">![][result]</strong></summary>
 <pre>
+LE23.java:10: error: incompatible types: T is not a functional interface
+        f = (int n) -&gt; n;
+            ^
+1 error
 </pre></details>
 ###### *see*: [see LE20](#LE20.java), [see LE12](#LE12.java), [15.27.3](http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.27.3), [1](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le20), [2](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le11), [3](https://rawgit.com/vnsmn/jtest/master/core/resources/docs/jls-15.html#le12)
 ***    
